@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 40px;
+        }
+        .card{
+            width: 200px;
+            height: 300px;
+            background-color: bisque;
+            border-radius: 12px;
+            box-shadow: 0 0 20px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: overline;
+            text-shadow: 10px;
+            font-weight: bold;
+        }
+        .card1{
+            z-index: 3;
+            left: 0;
+            top: 50px;
+            
+        }
+        .card2{
+            z-index: 2;
+            left: -150px;
+            top: 30px;
+        }
+        .card3{
+            z-index: 1;
+            left: -300px;
+            top: 10px;
+        }
+        .card:hover{
+            transform: translate(180px);
+            box-shadow: 0 10px 10px 2px ;
+            
+        }
+        .card1:hover{
+            background-color: rgb(70, 70, 219);
+            transform: translatey(-80px);
+            box-shadow: 0 10px 10px 2px ;
+           
+            
+        }
+        .card2:hover{
+            background-color: rgb(36, 139, 10);
+        }
+        .card3:hover{
+            background-color: rgb(233, 25, 25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card1"> card 1</div>
+        <div class="card card2">card 2</div>
+        <div class="card card3">card 3</div>
+    </div>
+</body>
+</html>
